@@ -12,7 +12,7 @@ Engineering experience is supporting evidence. It is not the primary positioning
 
 ## Current implementation state
 
-**ACI-001 — Deployable Professional Portfolio Website V1.** Static site, locally runnable, Replit-compatible, source-controlled on `feature/aci-001` during implementation and on `deployable` after validation.
+**ACI-001 — Deployable Professional Portfolio Website V1.** Static site, locally runnable, Replit-compatible. Implementation on `feature/aci-001`. Validated release on `deployable`.
 
 ## Prerequisites
 
