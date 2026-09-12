@@ -1,0 +1,6 @@
+run = "python -m http.server 8080 --directory public"
+entrypoint = "public/index.html"
+
+[deployment]
+deploymentTarget = "static"
+publicDir = "public"

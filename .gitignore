@@ -1,0 +1,57 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+.yarn/
+.yarn/cache/
+
+# Build / output
+dist/
+build/
+out/
+.vite/
+coverage/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+.secrets/
+credentials.json
+**/credentials*.json
+
+# IDE / editor
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.code-workspace
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# OS / misc
+.cache/
