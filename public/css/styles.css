@@ -630,6 +630,121 @@ h4 {
   margin: 0.35rem 0 0;
 }
 
+.share-widget {
+  margin-top: 1.85rem;
+}
+
+.share-widget-footer {
+  margin-top: 1.5rem;
+}
+
+.share-widget summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 2.5rem;
+  padding: 0.4rem 0.95rem;
+  border: 1px solid var(--navy);
+  background: var(--navy);
+  color: var(--cream);
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  list-style: none;
+}
+
+.share-widget summary::-webkit-details-marker {
+  display: none;
+}
+
+.share-widget summary::marker {
+  content: "";
+}
+
+.share-icon {
+  width: 0.95rem;
+  height: 0.95rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+}
+
+.share-panel {
+  margin-top: 0.75rem;
+  max-width: 22rem;
+  padding: 1rem 1.1rem 0.85rem;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.share-panel-label {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.share-native,
+.share-copy {
+  font-family: var(--font-ui);
+  font-size: 0.9375rem;
+  cursor: pointer;
+}
+
+.share-native {
+  display: inline-flex;
+  margin: 0 0 0.65rem;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--navy);
+  background: transparent;
+  color: var(--navy);
+}
+
+.share-native[hidden] {
+  display: none;
+}
+
+.share-options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.share-options li {
+  border-top: 1px solid var(--line);
+}
+
+.share-options a,
+.share-copy {
+  display: block;
+  width: 100%;
+  padding: 0.65rem 0;
+  border: 0;
+  background: transparent;
+  color: var(--navy);
+  text-align: left;
+  text-decoration: none;
+}
+
+.share-options a:hover,
+.share-copy:hover {
+  color: var(--gold-strong);
+}
+
+.share-feedback {
+  min-height: 1.2rem;
+  margin: 0.35rem 0 0;
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  color: var(--gold-strong);
+}
+
 .journey-path,
 .ai-path {
   display: flex;
