@@ -631,104 +631,62 @@ h4 {
 }
 
 .share-widget {
-  margin-top: 1.85rem;
+  margin-top: 1.75rem;
 }
 
-.share-widget-footer {
-  margin-top: 1.5rem;
+.share-widget svg,
+.share-icon {
+  display: none;
 }
 
 .share-heading {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  min-height: 2.5rem;
-  margin: 0;
-  padding: 0.4rem 0.95rem;
-  border: 1px solid var(--navy);
-  background: var(--navy);
-  color: var(--cream);
+  margin: 0 0 0.35rem;
   font-family: var(--font-ui);
-  font-size: 0.8125rem;
+  font-size: 1.12rem;
   font-weight: 650;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.share-icon {
-  width: 0.95rem;
-  height: 0.95rem;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.75;
-}
-
-.share-panel {
-  margin-top: 0.75rem;
-  max-width: 22rem;
-  padding: 1rem 1.1rem 0.85rem;
-  border: 1px solid var(--line);
-  background: var(--paper);
-}
-
-.share-panel-label {
-  margin: 0 0 0.65rem;
-  font-family: var(--font-ui);
-  font-size: 0.75rem;
-  font-weight: 650;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--ink-muted);
-}
-
-.share-native,
-.share-copy {
-  font-family: var(--font-ui);
-  font-size: 0.9375rem;
-  cursor: pointer;
 }
 
 .share-native {
   display: inline-flex;
-  margin: 0 0 0.65rem;
-  padding: 0.4rem 0.7rem;
-  border: 1px solid var(--navy);
+  margin: 0 0 0.5rem;
+  padding: 0;
+  border: 0;
   background: transparent;
-  color: var(--navy);
+  color: var(--gold-strong);
+  font-family: var(--font-ui);
+  font-size: 0.9375rem;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  cursor: pointer;
 }
 
 .share-native[hidden] {
   display: none;
 }
 
-.share-options {
+.share-options,
+.share-options li {
   list-style: none;
+}
+
+.share-options {
   margin: 0;
   padding: 0;
 }
 
-.share-options li {
-  border-top: 1px solid var(--line);
+.share-options li::marker {
+  content: none;
 }
 
-.share-options a,
 .share-copy {
-  display: block;
-  width: 100%;
-  padding: 0.65rem 0;
+  padding: 0;
   border: 0;
   background: transparent;
-  color: var(--navy);
-  font-family: var(--font-ui);
-  font-size: 0.9375rem;
-  white-space: nowrap;
-  text-align: left;
-  text-decoration: none;
-}
-
-.share-options a:hover,
-.share-copy:hover {
   color: var(--gold-strong);
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  cursor: pointer;
 }
 
 .share-feedback {
