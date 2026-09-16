@@ -12,7 +12,7 @@ Engineering experience is supporting evidence. It is not the primary positioning
 
 ## Current implementation state
 
-**ACI-003 — Desktop Support leadership repositioning.** Static site on `feature/aci-003` during implementation; validated release on `deployable`. Positions Sanil D Tison as an IT Support & Operations Leader targeting Desktop Support / End-User Computing.
+**ACI-003 — Desktop Support leadership repositioning.** Static site validated on `deployable`. Positions Sanil D Tison as an IT Support & Operations Leader targeting Desktop Support / End-User Computing.
 
 ## Prerequisites
 
