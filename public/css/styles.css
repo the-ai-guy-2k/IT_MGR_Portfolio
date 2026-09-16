@@ -638,11 +638,12 @@ h4 {
   margin-top: 1.5rem;
 }
 
-.share-widget summary {
+.share-heading {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
   min-height: 2.5rem;
+  margin: 0;
   padding: 0.4rem 0.95rem;
   border: 1px solid var(--navy);
   background: var(--navy);
@@ -652,16 +653,6 @@ h4 {
   font-weight: 650;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  cursor: pointer;
-  list-style: none;
-}
-
-.share-widget summary::-webkit-details-marker {
-  display: none;
-}
-
-.share-widget summary::marker {
-  content: "";
 }
 
 .share-icon {
@@ -728,6 +719,9 @@ h4 {
   border: 0;
   background: transparent;
   color: var(--navy);
+  font-family: var(--font-ui);
+  font-size: 0.9375rem;
+  white-space: nowrap;
   text-align: left;
   text-decoration: none;
 }

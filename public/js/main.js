@@ -12,13 +12,7 @@
   }
 
   toggle.addEventListener("click", function () {
-    var opening = !nav.classList.contains("is-open");
-    setOpen(opening);
-    if (opening) {
-      document.querySelectorAll("[data-share] details").forEach(function (details) {
-        details.open = false;
-      });
-    }
+    setOpen(!nav.classList.contains("is-open"));
   });
 
   nav.querySelectorAll("a").forEach(function (link) {
@@ -82,14 +76,9 @@
   }
 
   document.querySelectorAll("[data-share]").forEach(function (widget) {
-    var details = widget.querySelector("details");
     var nativeButton = widget.querySelector("[data-share-native]");
     var copyButton = widget.querySelector("[data-copy-link]");
     var feedback = widget.querySelector("[data-share-feedback]");
-
-    if (!details) {
-      return;
-    }
 
     if (canNativeShare && nativeButton) {
       nativeButton.hidden = false;
@@ -111,29 +100,5 @@
     }
 
     widget.setAttribute("data-share-ready", canNativeShare ? "native" : "fallback");
-
-    details.addEventListener("toggle", function () {
-      if (!details.open) {
-        return;
-      }
-      var nav = document.querySelector("[data-nav]");
-      var toggle = document.querySelector("[data-nav-toggle]");
-      if (nav) {
-        nav.classList.remove("is-open");
-      }
-      if (toggle) {
-        toggle.setAttribute("aria-expanded", "false");
-      }
-    });
-
-    document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape" && details.open) {
-        details.open = false;
-        var summary = details.querySelector("summary");
-        if (summary) {
-          summary.focus();
-        }
-      }
-    });
   });
 })();
