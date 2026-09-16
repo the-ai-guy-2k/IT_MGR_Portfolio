@@ -1,14 +1,14 @@
-/* IT Management Leadership Portfolio V1. Static CSS only. No framework. */
+/* IT Support & Operations Leadership Portfolio. Static CSS only. No framework. */
 
 :root {
   --navy: #0e2438;
   --navy-deep: #0a1b2b;
   --ink: #17202a;
   --ink-muted: #5b6570;
-  --cream: #f7f4ee;
-  --cream-band: #efe8dc;
-  --paper: #fffdf8;
-  --line: #d8d0c4;
+  --cream: #ffffff;
+  --cream-band: #f4f6f8;
+  --paper: #ffffff;
+  --line: #e2e5e8;
   --gold: #9a7328;
   --gold-strong: #7d5c1c;
   --header-h: 3.65rem;
@@ -272,7 +272,8 @@ h4 {
 .band-muted .domain-grid,
 .band-muted .lens,
 .band-muted .prose,
-.band-muted .timeline {
+.band-muted .timeline,
+.band-muted .horizon-grid {
   max-width: var(--wide);
   margin-left: auto;
   margin-right: auto;
@@ -289,7 +290,8 @@ h4 {
 .band-muted .domain-grid,
 .band-muted .lens,
 .band-muted .prose,
-.band-muted .timeline {
+.band-muted .timeline,
+.band-muted .horizon-grid {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
@@ -604,6 +606,82 @@ h4 {
   border: 0;
 }
 
+.glance {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0 0;
+}
+
+.glance div {
+  padding: 1rem 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.glance dt {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-strong);
+}
+
+.glance dd {
+  margin: 0.35rem 0 0;
+}
+
+.journey-path,
+.ai-path {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0 0 1.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.journey-path li,
+.ai-path li {
+  position: relative;
+  padding: 0.55rem 0.75rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+}
+
+.journey-path li.journey-now {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: #fff;
+  font-weight: 650;
+}
+
+.four-lenses {
+  grid-template-columns: 1fr;
+}
+
+.possibility-list {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.possibility-list li {
+  padding: 0.75rem 1rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  font-family: var(--font-ui);
+}
+
+.implication {
+  margin: 1.25rem 0 0;
+  font-family: var(--font-ui);
+  font-size: 0.98rem;
+}
+
 @media (min-width: 800px) {
   .nav-toggle {
     display: none;
@@ -632,6 +710,19 @@ h4 {
   .domain-grid,
   .horizon-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .four-lenses {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .glance {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem 2rem;
+  }
+
+  .possibility-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .philosophy-grid {
@@ -673,7 +764,8 @@ h4 {
   .band-muted .domain-grid,
   .band-muted .lens,
   .band-muted .prose,
-  .band-muted .timeline {
+  .band-muted .timeline,
+  .band-muted .horizon-grid {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
   }

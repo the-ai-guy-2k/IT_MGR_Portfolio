@@ -38,17 +38,20 @@ A static HTML/CSS/JS tree:
 
 ## Information architecture
 
-Management leadership dominates. Technical evidence is last among the primary sections.
+ACI-003 repositioned the public narrative to Desktop Support / EUC / IT Support Operations Leadership. The static architecture is unchanged. Management leadership remains primary; engineering depth is reframed, not removed.
 
-1. Overview / executive positioning
-2. Executive biography
-3. Leadership philosophy
-4. Leadership accomplishments / case studies
-5. IT Management expertise
-6. 30 / 60 / 90-day framework
-7. Career snapshot (executive resume facts)
-8. Credentials and supporting technical evidence
-9. Contact
+1. Overview / four-glance positioning
+2. Full-circle career journey
+3. Executive biography
+4. Leadership philosophy
+5. Leadership accomplishments / case studies
+6. Four capability lenses (people, technology, improvement, AI-assisted)
+7. AI-assisted engineering method
+8. 30 / 60 / 90-day framework (Desktop Support / EUC)
+9. Possible future applications (investigation only)
+10. Career snapshot (executive resume facts)
+11. Credentials and transferable project evidence
+12. Contact
 
 ## What this does not lock
 

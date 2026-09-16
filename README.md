@@ -12,7 +12,7 @@ Engineering experience is supporting evidence. It is not the primary positioning
 
 ## Current implementation state
 
-**ACI-001 — Deployable Professional Portfolio Website V1.** Static site, locally runnable, Replit-compatible. Implementation on `feature/aci-001`. Validated release on `deployable`.
+**ACI-003 — Desktop Support leadership repositioning.** Static site on `feature/aci-003` during implementation; validated release on `deployable`. Positions Sanil D Tison as an IT Support & Operations Leader targeting Desktop Support / End-User Computing.
 
 ## Prerequisites
 
@@ -76,8 +76,8 @@ Remote Git URL, Replit project name, and whether this site replaces the existing
 │   ├── css/styles.css
 │   └── js/main.js
 ├── docs/nebula/                 # NSA / Nebula engineering memory
-│   ├── aci/ACI-001.md
-│   ├── acr/ACR-001.md
+│   ├── aci/ACI-001.md, ACI-003.md
+│   ├── acr/ACR-001.md, ACR-003.md
 │   ├── architecture/
 │   ├── data-model/
 │   ├── artifacts/
@@ -91,4 +91,4 @@ Remote Git URL, Replit project name, and whether this site replaces the existing
 
 ## Content rule
 
-Do not invent metrics, team sizes, budgets, authority, employment dates, outcomes, testimonials, or certifications. Open evidence items from Portfolio V3 remain open on the website.
+Do not invent metrics, team sizes, budgets, authority, employment dates, outcomes, testimonials, or certifications. Do not invent a prior Desktop Support Manager or EUC Manager title. Open evidence items from Portfolio V3 remain unclaimed rather than estimated. Public pages do not carry internal harvest notes.
