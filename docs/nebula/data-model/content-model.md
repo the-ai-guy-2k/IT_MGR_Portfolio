@@ -13,7 +13,7 @@ The website is static. There is no database. The content model is the section ma
 |--------|--------|------------------|
 | Candidate identity | V3 cover + ACI-003 primary positioning | `#overview`, `#contact` |
 | Four-glance (who / origin / now / next) | ACI-003 first-screen requirement | `#overview` |
-| Leadership doctrine | ADVANCE THE TRUTH TILL MISSION COMPLETION | `#overview` quote, `#philosophy` |
+| Leadership doctrine | ADVANCE THE ESTABLISHED TRUTH | `#overview` quote, `#philosophy` |
 | Full-circle career path | ACI-003 journey | `#journey` |
 | Executive biography | V3 §2, reframed by ACI-003 | `#biography` |
 | Leadership case studies | V3 §4, harvest language removed | `#leadership-work` |
