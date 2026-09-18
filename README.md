@@ -74,10 +74,11 @@ Remote Git URL, Replit project name, and whether this site replaces the existing
 ├── public/                      # Served website files
 │   ├── index.html
 │   ├── css/styles.css
+│   ├── css/tokens.css
 │   └── js/main.js
 ├── docs/nebula/                 # NSA / Nebula engineering memory
-│   ├── aci/ACI-001.md, ACI-003.md
-│   ├── acr/ACR-001.md, ACR-003.md
+│   ├── aci/ACI-001.md, ACI-003.md, ACI-008.md
+│   ├── acr/ACR-001.md, ACR-003.md, ACR-008.md
 │   ├── architecture/
 │   ├── data-model/
 │   ├── artifacts/

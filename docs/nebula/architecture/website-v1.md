@@ -8,6 +8,7 @@
 The website is a static frontend:
 
 - `public/index.html`
+- `public/css/tokens.css`
 - `public/css/styles.css`
 - `public/js/main.js`
 
