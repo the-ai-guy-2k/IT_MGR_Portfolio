@@ -650,6 +650,140 @@ h4 {
   margin: 0.25rem 0 0;
 }
 
+.ev-section {
+  max-width: var(--wide);
+  margin: 0 auto;
+  padding: var(--space-section) var(--gutter);
+  text-align: left;
+  scroll-margin-top: var(--header-h);
+}
+
+.ev-section .section-lead {
+  max-width: 40rem;
+  margin-bottom: var(--space-7);
+}
+
+.ev-list {
+  display: grid;
+  gap: 0;
+}
+
+.ev-row {
+  padding: var(--space-5) 0 var(--space-6);
+  border-top: 1px solid var(--line);
+}
+
+.ev-row:first-child {
+  border-top: 2px solid var(--accent);
+}
+
+.ev-kicker {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-ui);
+  font-size: var(--fs-kicker);
+  font-weight: 650;
+  letter-spacing: var(--track-kicker);
+  text-transform: uppercase;
+  color: var(--accent-strong);
+}
+
+.ev-first h3 {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+}
+
+.ev-role {
+  margin: 0 0 0.85rem;
+  font-style: italic;
+  color: var(--ink-muted);
+}
+
+.ev-summary {
+  margin: 0;
+  max-width: 38rem;
+  color: var(--ink-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.ev-detail {
+  margin-top: var(--space-4);
+}
+
+.ev-detail summary {
+  cursor: pointer;
+  width: fit-content;
+  font-family: var(--font-ui);
+  font-size: var(--fs-kicker);
+  font-weight: 650;
+  letter-spacing: var(--track-kicker);
+  text-transform: uppercase;
+  color: var(--accent-strong);
+}
+
+.ev-detail summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.ev-detail[open] summary {
+  margin-bottom: var(--space-4);
+}
+
+.ev-facts {
+  margin: 0;
+  max-width: 40rem;
+}
+
+.ev-facts div {
+  margin: 0 0 1rem;
+}
+
+.ev-facts div:last-child {
+  margin-bottom: 0;
+}
+
+.ev-facts dt {
+  font-family: var(--font-ui);
+  font-size: var(--fs-kicker);
+  font-weight: 650;
+  letter-spacing: var(--track-kicker);
+  text-transform: uppercase;
+  color: var(--accent-strong);
+}
+
+.ev-facts dd {
+  margin: 0.35rem 0 0;
+  color: var(--ink-secondary);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+@media (min-width: 800px) {
+  .ev-first {
+    display: grid;
+    grid-template-columns: minmax(14rem, 0.9fr) minmax(0, 1.2fr);
+    column-gap: 3.5rem;
+    align-items: start;
+  }
+
+  .ev-first h3,
+  .ev-first .ev-role {
+    grid-column: 1;
+  }
+
+  .ev-first .ev-summary {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    margin-top: 0.15rem;
+  }
+}
+
 .domain-grid {
   display: grid;
   gap: 1rem;
