@@ -349,6 +349,7 @@ h4 {
 .band-muted .section-lead,
 .band-muted .domain-grid,
 .band-muted .lens,
+.band-muted .lead-inner,
 .band-muted .prose,
 .band-muted .timeline,
 .band-muted .horizon-grid {
@@ -674,6 +675,122 @@ h4 {
 
 .lens p {
   margin: 0 0 0.65rem;
+}
+
+.lead-section {
+  scroll-margin-top: var(--header-h);
+}
+
+.lead-inner {
+  padding-block: var(--space-section);
+  padding-inline: var(--gutter);
+}
+
+.lead-inner .eyebrow,
+.lead-inner h2,
+.lead-inner .section-lead {
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.lead-inner h2 {
+  margin-bottom: var(--space-4);
+}
+
+.lead-inner .section-lead {
+  max-width: 40rem;
+  margin-bottom: var(--space-7);
+}
+
+.lead-shell {
+  display: grid;
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.lead-lens {
+  padding-top: var(--space-5);
+  border-top: 2px solid var(--accent);
+  background: none;
+}
+
+.lead-lens h3 {
+  margin: 0 0 var(--space-4);
+  font-family: var(--font-display);
+  font-size: clamp(1.45rem, 2.6vw, 1.9rem);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+}
+
+.lead-lens summary {
+  cursor: pointer;
+  width: fit-content;
+  font-family: var(--font-ui);
+  font-size: var(--fs-kicker);
+  font-weight: 650;
+  letter-spacing: var(--track-kicker);
+  text-transform: uppercase;
+  color: var(--accent-strong);
+}
+
+.lead-lens summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.lead-lens ul {
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lead-lens li {
+  margin: 0;
+  padding: 0.45rem 0;
+  border-top: 1px solid var(--line);
+  color: var(--ink-secondary);
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.lead-note {
+  margin-top: var(--space-7);
+  padding-top: var(--space-5);
+  max-width: 40rem;
+  border-top: 1px solid var(--line);
+}
+
+.lead-note h3 {
+  margin: 0 0 var(--space-4);
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+}
+
+.lead-note p {
+  margin: 0 0 0.85rem;
+  color: var(--ink-muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.lead-note p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 800px) {
+  .lead-shell {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 3rem 4.5rem;
+  }
 }
 
 .horizon-grid {
