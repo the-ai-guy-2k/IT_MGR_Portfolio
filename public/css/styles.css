@@ -1188,7 +1188,175 @@ h4 {
   color: var(--gold-strong);
 }
 
-.journey-path,
+.path-section {
+  max-width: var(--wide);
+  margin: 0 auto;
+  padding: var(--space-section) var(--gutter);
+  text-align: left;
+  scroll-margin-top: var(--header-h);
+}
+
+.path-section .section-lead {
+  max-width: 40rem;
+  margin-bottom: var(--space-7);
+}
+
+.path-arc {
+  display: grid;
+  gap: var(--space-5);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: path;
+}
+
+.path-arc > li {
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  padding: 0 0 var(--space-5);
+  border-bottom: 1px solid var(--line);
+  counter-increment: path;
+}
+
+.path-arc > li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.path-phase {
+  margin: 0 0 0.7rem;
+  font-family: var(--font-ui);
+  font-size: var(--fs-kicker);
+  font-weight: 650;
+  letter-spacing: var(--track-kicker);
+  text-transform: uppercase;
+  color: var(--accent-strong);
+}
+
+.path-arc h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.1vw, 1.45rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+}
+
+.path-arc h3::before {
+  content: counter(path, decimal-leading-zero);
+  display: block;
+  margin-bottom: 0.55rem;
+  font-family: var(--font-ui);
+  font-size: var(--fs-kicker);
+  font-weight: 650;
+  letter-spacing: var(--track-kicker);
+  color: var(--accent-strong);
+}
+
+.path-marks {
+  margin: 0.55rem 0 0;
+  max-width: 22rem;
+  font-family: var(--font-ui);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--ink-muted);
+}
+
+.path-now {
+  padding: var(--space-5) 0 var(--space-4);
+  border-bottom: 0;
+  border-top: 2px solid var(--navy);
+}
+
+.path-prose {
+  margin-top: var(--space-7);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--line);
+}
+
+.path-prose .follow {
+  max-width: 40rem;
+}
+
+@media (min-width: 1024px) {
+  .path-arc {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.4fr) minmax(0, 1.15fr) minmax(0, 1.25fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "start development present direction"
+      "start infra      ai      direction"
+      "start techlead   .       direction";
+    column-gap: 2.75rem;
+    row-gap: 1.35rem;
+  }
+
+  .path-arc > li.path-start,
+  .path-arc > li.path-dev,
+  .path-arc > li.path-present,
+  .path-arc > li.path-infra,
+  .path-arc > li.path-tech,
+  .path-arc > li.path-ai {
+    padding: 0 1.35rem 0 0;
+    border-bottom: 0;
+  }
+
+  .path-arc > li.path-start {
+    grid-area: start;
+  }
+
+  .path-arc > li.path-dev {
+    grid-area: development;
+  }
+
+  .path-arc > li.path-infra {
+    grid-area: infra;
+    padding-top: 1.15rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .path-arc > li.path-tech {
+    grid-area: techlead;
+    padding-top: 1.15rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .path-arc > li.path-present {
+    grid-area: present;
+  }
+
+  .path-arc > li.path-ai {
+    grid-area: ai;
+    padding-top: 1.15rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .path-arc > li.path-now {
+    grid-area: direction;
+    margin-top: 0;
+    padding: var(--space-5) var(--space-5) var(--space-4);
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 2px solid var(--navy);
+    background: var(--surface-muted);
+  }
+
+  .path-arc > li.path-start::after,
+  .path-arc > li.path-dev::after,
+  .path-arc > li.path-present::after {
+    content: "→";
+    position: absolute;
+    top: 0.05rem;
+    right: 0.05rem;
+    color: var(--accent);
+    font-family: var(--font-ui);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+  }
+}
+
 .ai-path {
   display: flex;
   flex-wrap: wrap;
@@ -1198,7 +1366,6 @@ h4 {
   list-style: none;
 }
 
-.journey-path li,
 .ai-path li {
   position: relative;
   padding: 0.55rem 0.75rem;
@@ -1206,13 +1373,6 @@ h4 {
   border: 1px solid var(--line);
   font-family: var(--font-ui);
   font-size: 0.88rem;
-}
-
-.journey-path li.journey-now {
-  background: var(--navy);
-  border-color: var(--navy);
-  color: var(--surface);
-  font-weight: 650;
 }
 
 .four-lenses {
