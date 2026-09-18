@@ -350,6 +350,7 @@ h4 {
 .band-muted .domain-grid,
 .band-muted .lens,
 .band-muted .lead-inner,
+.band-muted .plan-inner,
 .band-muted .prose,
 .band-muted .timeline,
 .band-muted .horizon-grid {
@@ -924,6 +925,107 @@ h4 {
   .lead-shell {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 3rem 4.5rem;
+  }
+}
+
+.plan-section {
+  scroll-margin-top: var(--header-h);
+}
+
+.plan-inner {
+  padding-block: var(--space-section);
+  padding-inline: var(--gutter);
+}
+
+.plan-inner .eyebrow,
+.plan-inner h2,
+.plan-inner .section-lead {
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.plan-inner h2 {
+  margin-bottom: var(--space-4);
+}
+
+.plan-inner .section-lead {
+  max-width: 40rem;
+  margin-bottom: var(--space-7);
+}
+
+.plan-flow {
+  display: grid;
+  gap: var(--space-6);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plan-flow li {
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  padding: var(--space-5) 0 0;
+  border-top: 2px solid var(--accent);
+  background: none;
+}
+
+.plan-phase {
+  margin: 0 0 0.7rem;
+  font-family: var(--font-ui);
+  font-size: var(--fs-kicker);
+  font-weight: 650;
+  letter-spacing: var(--track-kicker);
+  text-transform: uppercase;
+  color: var(--accent-strong);
+}
+
+.plan-flow h3 {
+  margin: 0 0 0.85rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.45rem, 2.6vw, 1.9rem);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+}
+
+.plan-flow p:last-child {
+  margin: 0;
+  max-width: 22rem;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--ink-secondary);
+}
+
+@media (min-width: 1024px) {
+  .plan-flow {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.75rem 2.75rem;
+    align-items: start;
+  }
+
+  .plan-flow li {
+    padding: var(--space-5) 1.35rem 0 0;
+  }
+
+  .plan-flow li:not(:last-child)::after {
+    content: "→";
+    position: absolute;
+    top: 1.55rem;
+    right: 0.05rem;
+    color: var(--accent);
+    font-family: var(--font-ui);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  .plan-flow p:last-child {
+    max-width: none;
   }
 }
 
